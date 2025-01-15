@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="大学物理下期中复习（热学部分） 第九章 气体动理论 9.1 理想气体的物态方程 $pV=\\dfrac{m}{M}RT$\n9.2 麦克斯韦速率分布 $f(v)=\\dfrac{\\mathrm dN}{N_0\\mathrm dv}$，式中$f(v)$称为速率分布函数，表示速率在$v$附近单位速率区间内的分子数占总分字数的百分比，或者说速率$v$附近单位速率区间内的概率。\n">
+<title>HIT大学物理知识点总结</title>
+
+<link rel='canonical' href='https://icewatermeloncatisnotcat.github.io/icewatermeloncatisnotcat/p/hit%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/'>
+
+<link rel="stylesheet" href="/icewatermeloncatisnotcat/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="HIT大学物理知识点总结">
+<meta property='og:description' content="大学物理下期中复习（热学部分） 第九章 气体动理论 9.1 理想气体的物态方程 $pV=\\dfrac{m}{M}RT$\n9.2 麦克斯韦速率分布 $f(v)=\\dfrac{\\mathrm dN}{N_0\\mathrm dv}$，式中$f(v)$称为速率分布函数，表示速率在$v$附近单位速率区间内的分子数占总分字数的百分比，或者说速率$v$附近单位速率区间内的概率。\n">
+<meta property='og:url' content='https://icewatermeloncatisnotcat.github.io/icewatermeloncatisnotcat/p/hit%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/'>
+<meta property='og:site_name' content='冰瓜猫不是猫'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-01-16T00:31:44&#43;08:00'/><meta property='article:modified_time' content='2025-01-16T00:31:44&#43;08:00'/>
+<meta name="twitter:title" content="HIT大学物理知识点总结">
+<meta name="twitter:description" content="大学物理下期中复习（热学部分） 第九章 气体动理论 9.1 理想气体的物态方程 $pV=\\dfrac{m}{M}RT$\n9.2 麦克斯韦速率分布 $f(v)=\\dfrac{\\mathrm dN}{N_0\\mathrm dv}$，式中$f(v)$称为速率分布函数，表示速率在$v$附近单位速率区间内的分子数占总分字数的百分比，或者说速率$v$附近单位速率区间内的概率。\n">
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/icewatermeloncatisnotcat/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/icewatermeloncatisnotcat/img/avatar_hu8124535330851922781.png" width="300"
+                            height="260" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">😃</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/icewatermeloncatisnotcat">冰瓜猫不是猫</a></h1>
+            <h2 class="site-description">演示说明</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/icewatermeloncatisnotcat'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://space.bilibili.com/627043519'
+                        target="_blank"
+                        title="哔哩哔哩"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <g>
+        <path fill="none" d="M0 0h24v24H0z"/>
+        <path d="M7.172 2.757L10.414 6h3.171l3.243-3.242a1 1 0 0 1 1.415 1.415l-1.829 1.827L18.5 6A3.5 3.5 0 0 1 22 9.5v8a3.5 3.5 0 0 1-3.5 3.5h-13A3.5 3.5 0 0 1 2 17.5v-8A3.5 3.5 0 0 1 5.5 6h2.085L5.757 4.171a1 1 0 0 1 1.415-1.415zM18.5 8h-13a1.5 1.5 0 0 0-1.493 1.356L4 9.5v8a1.5 1.5 0 0 0 1.356 1.493L5.5 19h13a1.5 1.5 0 0 0 1.493-1.356L20 17.5v-8A1.5 1.5 0 0 0 18.5 8zM8 11a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1zm8 0a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1z"/>
+    </g>
+</svg>
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/icewatermeloncatisnotcat/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/icewatermeloncatisnotcat/%E5%85%B3%E4%BA%8E/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/icewatermeloncatisnotcat/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/icewatermeloncatisnotcat/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>查找</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/icewatermeloncatisnotcat/%E9%93%BE%E6%8E%A5/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>链接</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+                    
+                        <li id="i18n-switch">  
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 5h7" />
+  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
+  <path d="M12 20l4 -9l4 9" />
+  <path d="M19.1 18h-6.2" />
+</svg>
+
+
+
+                            <select name="language" title="language" onchange="window.location.href = this.selectedOptions[0].value">
+                                
+                                    <option value="https://icewatermeloncatisnotcat.github.io/icewatermeloncatisnotcat/en/" >English</option>
+                                
+                                    <option value="https://icewatermeloncatisnotcat.github.io/icewatermeloncatisnotcat/" selected>简体中文</option>
+                                
+                                    <option value="https://icewatermeloncatisnotcat.github.io/icewatermeloncatisnotcat/ar/" >عربي</option>
+                                
+                            </select>
+                        </li>
+                    
+                
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li>
+      <ol>
+        <li><a href="#第九章-气体动理论">第九章 气体动理论</a>
+          <ol>
+            <li><a href="#91-理想气体的物态方程">9.1 理想气体的物态方程</a></li>
+            <li><a href="#92-麦克斯韦速率分布">9.2 麦克斯韦速率分布</a></li>
+            <li><a href="#93-玻尔兹曼分布">9.3 玻尔兹曼分布</a></li>
+            <li><a href="#94-理想气体的压强">9.4 理想气体的压强</a></li>
+            <li><a href="#95-温度的微观本质">9.5 温度的微观本质</a></li>
+            <li><a href="#96-能量均分定理">9.6 能量均分定理</a></li>
+            <li><a href="#97-理想气体的内能">9.7 理想气体的内能</a></li>
+            <li><a href="#98-气体分子的平均自由程和平均碰撞频率">9.8 气体分子的平均自由程和平均碰撞频率</a></li>
+          </ol>
+        </li>
+        <li><a href="#第十章-热力学基础">第十章 热力学基础</a>
+          <ol>
+            <li><a href="#101-热力学第一定律">10.1 热力学第一定律</a></li>
+            <li><a href="#102-内能功">10.2 内能、功</a></li>
+            <li><a href="#103-热">10.3 热</a></li>
+            <li><a href="#104-准静态过程">10.4 准静态过程</a></li>
+            <li><a href="#105-非静态绝热过程">10.5 非静态绝热过程</a></li>
+            <li><a href="#106-循环过程和卡诺循环">10.6 循环过程和卡诺循环</a></li>
+            <li><a href="#107-热力学第二定律和不可逆过程">10.7 热力学第二定律和不可逆过程</a></li>
+            <li><a href="#108-卡诺定理">10.8 卡诺定理</a></li>
+            <li><a href="#109-熵">10.9 熵</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#完结">完结</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/icewatermeloncatisnotcat/p/hit%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/">HIT大学物理知识点总结</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">2025-01-16</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 4 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h1 id="大学物理下期中复习热学部分">大学物理下期中复习（热学部分）
+</h1><h3 id="第九章-气体动理论">第九章 气体动理论
+</h3><h4 id="91-理想气体的物态方程">9.1 理想气体的物态方程
+</h4><p>$pV=\dfrac{m}{M}RT$</p>
+<h4 id="92-麦克斯韦速率分布">9.2 麦克斯韦速率分布
+</h4><p>$f(v)=\dfrac{\mathrm dN}{N_0\mathrm dv}$，式中$f(v)$称为<strong>速率分布函数</strong>，表示速率在$v$附近单位速率区间内的分子数占总分字数的百分比，或者说速率$v$附近单位速率区间内的概率。</p>
+<p>$\dfrac{\mathrm dN}{N_0}=4\pi\left(\dfrac{m_0}{2\pi kT}\right)^{\frac{3}{2}}\mathrm e^{-\dfrac{\mu v^2}{2kT}}v^2\mathrm dv$，即$f(v)=\dfrac{\mathrm dN}{N_0}=4\pi\left(\dfrac{m_0}{2\pi kT}\right)^{\frac{3}{2}}\mathrm e^{-\dfrac{\mu v^2}{2kT}}v^2 $。</p>
+<p>该式只适用于平衡态理想气体，期中$k$为<strong>玻尔兹曼常量</strong>，$k=\dfrac{R}{N_A}$</p>
+<p>作出$f(v)-v$图像，图像下的面积应满足归一化条件，即$\displaystyle\int_0^\infty f(v)\mathrm dv=1$。</p>
+<p>$f(v)$极大值对应<strong>最概然速率</strong>，$v_p=\sqrt{\dfrac{2RT}{M}}$。</p>
+<p>大量分子的速率的算术平均值为<strong>平均速率</strong>，$\overline v=\sqrt{\dfrac{8RT}{\pi M}}$。</p>
+<p>大量分子的速率平方的平均值的开根为<strong>方均根速率</strong>，$\sqrt{\overline{v^2}}=\sqrt{\dfrac{3RT}{M}}$。</p>
+<p>讨论分子速率分布用最概然速率，讨论分子平均平动动能用方均根速率，讨论分子碰撞和平均自由程用平均速率。</p>
+<h4 id="93-玻尔兹曼分布">9.3 玻尔兹曼分布
+</h4>$$
+\mathrm dN=n_0\left(\dfrac{m_0}{2\pi kT}\right)^{\frac{3}{2}}\mathrm e^{-\frac{\varepsilon_k+\varepsilon_p}{kT}}\mathrm dv_x\mathrm dv_y\mathrm dv_z\mathrm dx\mathrm dy\mathrm dz
+$$$$
+n=n_0\mathrm e^{-\dfrac{\varepsilon_p}{kT}}
+$$<p>
+是<strong>分子数按照势能的分布律</strong>。</p>
+<h4 id="94-理想气体的压强">9.4 理想气体的压强
+</h4><p>$p=\dfrac{2}{3}n\overline{\varepsilon_{k_t}}$，其中$\overline{\varepsilon_{k_t}}=\dfrac{1}{2}m_0\overline{v^2}$称为<strong>气体分子的平均平动动能</strong>。</p>
+<h4 id="95-温度的微观本质">9.5 温度的微观本质
+</h4>$$
+\overline{\varepsilon_{k_t}}=\dfrac{3}{2}kT
+$$<h4 id="96-能量均分定理">9.6 能量均分定理
+</h4><ul>
+<li>
+<p>自由度</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th style="text-align: center">分子种类</th>
+          <th style="text-align: center">平动自由度t</th>
+          <th style="text-align: center">转动自由度</th>
+          <th style="text-align: center">总自由度i</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">单原子分子</td>
+          <td style="text-align: center">3</td>
+          <td style="text-align: center">0</td>
+          <td style="text-align: center">3</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">刚性双原子分子</td>
+          <td style="text-align: center">3</td>
+          <td style="text-align: center">2</td>
+          <td style="text-align: center">5</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">刚性多原子分子</td>
+          <td style="text-align: center">3</td>
+          <td style="text-align: center">3</td>
+          <td style="text-align: center">6</td>
+      </tr>
+  </tbody>
+</table></div>
+<p><font face="楷体">注意：多原子分子中有些分子是直线型，比如$CO_2$， 自由度为5</font></p>
+</li>
+<li>
+<p>能量均分定理</p>
+<p>物质分子的每一个自由度都具有相同的平均动能，大小为$\dfrac{1}{2}kT$，此结论为<strong>能量均分定理</strong>。</p>
+<p>那么分子的平均动能为$\overline{\varepsilon_k}=\dfrac{i}{2}kT$。</p>
+</li>
+</ul>
+<h4 id="97-理想气体的内能">9.7 理想气体的内能
+</h4>$$
+E=\dfrac{m}{M}\dfrac{i}{2}RT
+$$<p>
+理想气体的内能是温度的单值函数。</p>
+<h4 id="98-气体分子的平均自由程和平均碰撞频率">9.8 气体分子的平均自由程和平均碰撞频率
+</h4>$$
+\overline\lambda=\dfrac{kT}{\sqrt{2}\pi d^2p}
+$$$$
+\overline\lambda=\dfrac{1}{\sqrt{2}\pi d^2n}
+$$$$
+\overline z=\sqrt2\pi d^2\overline vn
+$$<h3 id="第十章-热力学基础">第十章 热力学基础
+</h3><h4 id="101-热力学第一定律">10.1 热力学第一定律
+</h4>$$
+Q=\Delta E+W
+$$<h4 id="102-内能功">10.2 内能、功
+</h4>$$
+W=\displaystyle\int_{V_1}^{V_2}p\mathrm dV
+$$<h4 id="103-热">10.3 热
+</h4><ul>
+<li>
+$$
+  C=\lim\limits_{\Delta T\to0}\dfrac{\Delta Q}{\Delta T}=\dfrac{\mathrm{d}\kern{-4.3pt}\bar{\small\phantom{q}}\kern{-0.7pt}Q}{\mathrm dT}
+  $$</li>
+<li>
+$$
+  c=\dfrac{1}{m}\dfrac{\mathrm{d}\kern{-4.3pt}\bar{\small\phantom{q}}\kern{-0.7pt}Q}{\mathrm dT}
+  $$</li>
+<li>
+<p>摩尔热容</p>
+<ul>
+<li>
+$$
+    C_{V,m}=\dfrac{i}{2}R
+    $$</li>
+<li>
+$$
+    C_{p,m}=C_{V,m}+R
+    $$</li>
+<li>
+$$
+    \gamma=\dfrac{C_{p,m}}{C_{V,m}}=\dfrac{i+2}{i}
+    $$<p>
+其中$i$是<strong>气体分子自由度</strong>。</p>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="104-准静态过程">10.4 准静态过程
+</h4><div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th style="text-align: center">过程</th>
+          <th style="text-align: center">特征</th>
+          <th style="text-align: center">过程方程</th>
+          <th style="text-align: center">吸收热量$Q$</th>
+          <th style="text-align: center">对外做功$A$</th>
+          <th style="text-align: center">内能增量$\Delta E$</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">等容</td>
+          <td style="text-align: center">$V=C$</td>
+          <td style="text-align: center">$\frac{P_1}{T_1}=\frac{P_2}{T_2}$</td>
+          <td style="text-align: center">$\frac{m}{M}C_{V,m}(T_2-T_1)$</td>
+          <td style="text-align: center">0</td>
+          <td style="text-align: center">$\frac{m}{M}C_{V,m}(T_2-T_1)$</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">等压</td>
+          <td style="text-align: center">$p=C$</td>
+          <td style="text-align: center">$\frac{V_1}{T_1}=\frac{V_2}{T_2}$</td>
+          <td style="text-align: center">$\frac{m}{M}C_{p,m}(T_2-T_1)$</td>
+          <td style="text-align: center">$p(V_2-V_1)$</td>
+          <td style="text-align: center">$\frac{m}{M}C_{V,m}(T_2-T_1)$</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">等温</td>
+          <td style="text-align: center">$T=C$</td>
+          <td style="text-align: center">$p_1V_1=p_2V_2$</td>
+          <td style="text-align: center">$\frac{m}{M}RT\ln\frac{V_1}{V_2}=\frac{m}{M}RT\ln\frac{p_1}{p_2}$</td>
+          <td style="text-align: center">$\frac{m}{M}RT\ln\frac{V_1}{V_2}=\frac{m}{M}RT\ln\frac{p_1}{p_2}$</td>
+          <td style="text-align: center">0</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">绝热</td>
+          <td style="text-align: center">$Q=0$</td>
+          <td style="text-align: center">$pV^\gamma=C$</td>
+          <td style="text-align: center">0</td>
+          <td style="text-align: center">$-\frac{m}{M}C_{V,m}(T_2-T_1)$,$\frac{1}{\gamma-1}(p_1V_1-p_2V_2)$</td>
+          <td style="text-align: center">$\frac{m}{M}C_{V,m}(T_2-T_1)$</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">多方</td>
+          <td style="text-align: center">———</td>
+          <td style="text-align: center">$pV^n=C$</td>
+          <td style="text-align: center">$\Delta E+A$</td>
+          <td style="text-align: center">$\frac{1}{n-1}(p_1V_1-p_2V_2)$</td>
+          <td style="text-align: center">$\frac{m}{M}C_{V,m}(T_2-T_1)$</td>
+      </tr>
+  </tbody>
+</table></div>
+<p><font face="楷体">注：1.上表的过程方程中，$C$表示常数。2.多方过程中的$n$为多方指数。</font></p>
+<h4 id="105-非静态绝热过程">10.5 非静态绝热过程
+</h4><p>即绝热自由膨胀过程。此过程中气体内能不变，温度不变。不能用准静态过程的公式计算。</p>
+<h4 id="106-循环过程和卡诺循环">10.6 循环过程和卡诺循环
+</h4><ul>
+<li>
+<p>热力学循环：$p-V$图中顺时针的循环为正循环、热循环；逆时针的为逆循环、制冷循环。</p>
+</li>
+<li>
+$$
+  \eta=\dfrac{W}{Q_1}=1-\dfrac{Q_2}{Q_1}
+  $$<p>
+<font face="楷体">注：式中$Q_1$为从高温热源吸收热量，$Q_2$为向低温热源放出热量。均取正值。</font></p>
+</li>
+<li>
+$$
+  \varepsilon=\dfrac{Q_2}{W}=\dfrac{Q_2}{Q_1-Q_2}
+  $$<p>
+<font face="楷体">注：式中$Q_2$为向低温热源吸收热量，$Q_1$为向高温热源放出热量。</font></p>
+</li>
+<li>
+$$
+  \eta=1-\dfrac{T_2}{T_1}
+  $$</li>
+<li>
+$$
+  \varepsilon=\dfrac{T_2}{T_1-T_2}
+  $$</li>
+</ul>
+<h4 id="107-热力学第二定律和不可逆过程">10.7 热力学第二定律和不可逆过程
+</h4><ul>
+<li>开尔文表述：不可能制成一种循环动作的热机，只从单一热源吸取热量使之完全变为有用功而不产生任何其他影响。第二类永动机不可能制成。</li>
+<li>克劳修斯表述：不可能把热量从低温物体传到高温物体而不引起其他任何变化。热量不可能自动地从低温传向高温。</li>
+<li>一切和热现象有关的实际宏观过程都是不可逆的。</li>
+</ul>
+<h4 id="108-卡诺定理">10.8 卡诺定理
+</h4><ul>
+<li>
+<p>可逆热机效率$\eta=1-\dfrac{T_2}{T_1}$</p>
+</li>
+<li>
+<p>不可逆热机效率不大于可逆热机效率。</p>
+<p><font face="楷体">注：制冷机也有类似定理</font></p>
+</li>
+</ul>
+<h4 id="109-熵">10.9 熵
+</h4><ul>
+<li>
+$$
+  \mathrm dS\geq\dfrac{\mathrm{d}\kern{-4.3pt}\bar{\small\phantom{q}}\kern{-0.7pt}Q}{\mathrm T}
+  $$<p>
+可逆过程取等号。</p>
+$$
+  \Delta S=\displaystyle\int_1^2\mathrm dS=\displaystyle\int_1^2\dfrac{\mathrm{d}\kern{-4.3pt}\bar{\small\phantom{q}}\kern{-0.7pt}Q}{\mathrm T}
+  $$</li>
+<li>
+<p>熵增加原理：孤立系统，$\mathrm{d}\kern{-4.3pt}\bar{\small\phantom{q}}\kern{-0.7pt}Q=0$ ,$\mathrm dS\geq0$</p>
+</li>
+</ul>
+<h2 id="完结">完结
+</h2>
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI&#43;WdtXRGWt2kTvGFasHpSy3SV"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG&#43;vnGctmUb0ZY0l8"crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"integrity="sha384-&#43;VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4&#43;/RRE05"crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.body, {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ],
+            ignoredClasses: ["gist"]
+        });})
+</script>
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    <script src="https://utteranc.es/client.js" 
+        repo=""
+        issue-term="pathname"
+        
+        crossorigin="anonymous"
+        async
+        >
+</script>
+
+<style>
+    .utterances {
+        max-width: unset;
+    }
+</style>
+
+<script>
+    let utterancesLoaded = false;
+
+    function setUtterancesTheme(theme) {
+        let utterances = document.querySelector('.utterances iframe');
+        if (utterances) {
+            utterances.contentWindow.postMessage(
+                {
+                    type: 'set-theme',
+                    theme: `github-${theme}`
+                },
+                'https://utteranc.es'
+            );
+        }
+    }
+
+    addEventListener('message', event => {
+        if (event.origin !== 'https://utteranc.es') return;
+
+        
+        utterancesLoaded = true;
+        setUtterancesTheme(document.documentElement.dataset.scheme)
+    });
+
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (!utterancesLoaded) return;
+        setUtterancesTheme(e.detail)
+    })
+</script>
+
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2025 icewatermeloncatisnotcat
+    </section>
+    
+    <section class="powerby">
+        
+            大家好,我是冰瓜猫不是猫 <br/>
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.29.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/icewatermeloncatisnotcat/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

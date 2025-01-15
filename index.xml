@@ -7,7 +7,246 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>icewatermeloncatisnotcat</copyright>
-        <lastBuildDate>Thu, 16 Jan 2025 00:25:07 +0800</lastBuildDate><atom:link href="https://icewatermeloncatisnotcat.github.io/icewatermeloncatisnotcat/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 16 Jan 2025 00:31:44 +0800</lastBuildDate><atom:link href="https://icewatermeloncatisnotcat.github.io/icewatermeloncatisnotcat/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>HIT大学物理知识点总结</title>
+        <link>https://icewatermeloncatisnotcat.github.io/icewatermeloncatisnotcat/p/hit%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/</link>
+        <pubDate>Thu, 16 Jan 2025 00:31:44 +0800</pubDate>
+        
+        <guid>https://icewatermeloncatisnotcat.github.io/icewatermeloncatisnotcat/p/hit%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/</guid>
+        <description>&lt;h1 id=&#34;大学物理下期中复习热学部分&#34;&gt;大学物理下期中复习（热学部分）
+&lt;/h1&gt;&lt;h3 id=&#34;第九章-气体动理论&#34;&gt;第九章 气体动理论
+&lt;/h3&gt;&lt;h4 id=&#34;91-理想气体的物态方程&#34;&gt;9.1 理想气体的物态方程
+&lt;/h4&gt;&lt;p&gt;$pV=\dfrac{m}{M}RT$&lt;/p&gt;
+&lt;h4 id=&#34;92-麦克斯韦速率分布&#34;&gt;9.2 麦克斯韦速率分布
+&lt;/h4&gt;&lt;p&gt;$f(v)=\dfrac{\mathrm dN}{N_0\mathrm dv}$，式中$f(v)$称为&lt;strong&gt;速率分布函数&lt;/strong&gt;，表示速率在$v$附近单位速率区间内的分子数占总分字数的百分比，或者说速率$v$附近单位速率区间内的概率。&lt;/p&gt;
+&lt;p&gt;$\dfrac{\mathrm dN}{N_0}=4\pi\left(\dfrac{m_0}{2\pi kT}\right)^{\frac{3}{2}}\mathrm e^{-\dfrac{\mu v^2}{2kT}}v^2\mathrm dv$，即$f(v)=\dfrac{\mathrm dN}{N_0}=4\pi\left(\dfrac{m_0}{2\pi kT}\right)^{\frac{3}{2}}\mathrm e^{-\dfrac{\mu v^2}{2kT}}v^2 $。&lt;/p&gt;
+&lt;p&gt;该式只适用于平衡态理想气体，期中$k$为&lt;strong&gt;玻尔兹曼常量&lt;/strong&gt;，$k=\dfrac{R}{N_A}$&lt;/p&gt;
+&lt;p&gt;作出$f(v)-v$图像，图像下的面积应满足归一化条件，即$\displaystyle\int_0^\infty f(v)\mathrm dv=1$。&lt;/p&gt;
+&lt;p&gt;$f(v)$极大值对应&lt;strong&gt;最概然速率&lt;/strong&gt;，$v_p=\sqrt{\dfrac{2RT}{M}}$。&lt;/p&gt;
+&lt;p&gt;大量分子的速率的算术平均值为&lt;strong&gt;平均速率&lt;/strong&gt;，$\overline v=\sqrt{\dfrac{8RT}{\pi M}}$。&lt;/p&gt;
+&lt;p&gt;大量分子的速率平方的平均值的开根为&lt;strong&gt;方均根速率&lt;/strong&gt;，$\sqrt{\overline{v^2}}=\sqrt{\dfrac{3RT}{M}}$。&lt;/p&gt;
+&lt;p&gt;讨论分子速率分布用最概然速率，讨论分子平均平动动能用方均根速率，讨论分子碰撞和平均自由程用平均速率。&lt;/p&gt;
+&lt;h4 id=&#34;93-玻尔兹曼分布&#34;&gt;9.3 玻尔兹曼分布
+&lt;/h4&gt;$$
+\mathrm dN=n_0\left(\dfrac{m_0}{2\pi kT}\right)^{\frac{3}{2}}\mathrm e^{-\frac{\varepsilon_k+\varepsilon_p}{kT}}\mathrm dv_x\mathrm dv_y\mathrm dv_z\mathrm dx\mathrm dy\mathrm dz
+$$$$
+n=n_0\mathrm e^{-\dfrac{\varepsilon_p}{kT}}
+$$&lt;p&gt;
+是&lt;strong&gt;分子数按照势能的分布律&lt;/strong&gt;。&lt;/p&gt;
+&lt;h4 id=&#34;94-理想气体的压强&#34;&gt;9.4 理想气体的压强
+&lt;/h4&gt;&lt;p&gt;$p=\dfrac{2}{3}n\overline{\varepsilon_{k_t}}$，其中$\overline{\varepsilon_{k_t}}=\dfrac{1}{2}m_0\overline{v^2}$称为&lt;strong&gt;气体分子的平均平动动能&lt;/strong&gt;。&lt;/p&gt;
+&lt;h4 id=&#34;95-温度的微观本质&#34;&gt;9.5 温度的微观本质
+&lt;/h4&gt;$$
+\overline{\varepsilon_{k_t}}=\dfrac{3}{2}kT
+$$&lt;h4 id=&#34;96-能量均分定理&#34;&gt;9.6 能量均分定理
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;自由度&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;分子种类&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;平动自由度t&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;转动自由度&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;总自由度i&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;单原子分子&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;3&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;0&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;3&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;刚性双原子分子&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;3&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;2&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;5&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;刚性多原子分子&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;3&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;3&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;6&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;font face=&#34;楷体&#34;&gt;注意：多原子分子中有些分子是直线型，比如$CO_2$， 自由度为5&lt;/font&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;能量均分定理&lt;/p&gt;
+&lt;p&gt;物质分子的每一个自由度都具有相同的平均动能，大小为$\dfrac{1}{2}kT$，此结论为&lt;strong&gt;能量均分定理&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;那么分子的平均动能为$\overline{\varepsilon_k}=\dfrac{i}{2}kT$。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;97-理想气体的内能&#34;&gt;9.7 理想气体的内能
+&lt;/h4&gt;$$
+E=\dfrac{m}{M}\dfrac{i}{2}RT
+$$&lt;p&gt;
+理想气体的内能是温度的单值函数。&lt;/p&gt;
+&lt;h4 id=&#34;98-气体分子的平均自由程和平均碰撞频率&#34;&gt;9.8 气体分子的平均自由程和平均碰撞频率
+&lt;/h4&gt;$$
+\overline\lambda=\dfrac{kT}{\sqrt{2}\pi d^2p}
+$$$$
+\overline\lambda=\dfrac{1}{\sqrt{2}\pi d^2n}
+$$$$
+\overline z=\sqrt2\pi d^2\overline vn
+$$&lt;h3 id=&#34;第十章-热力学基础&#34;&gt;第十章 热力学基础
+&lt;/h3&gt;&lt;h4 id=&#34;101-热力学第一定律&#34;&gt;10.1 热力学第一定律
+&lt;/h4&gt;$$
+Q=\Delta E+W
+$$&lt;h4 id=&#34;102-内能功&#34;&gt;10.2 内能、功
+&lt;/h4&gt;$$
+W=\displaystyle\int_{V_1}^{V_2}p\mathrm dV
+$$&lt;h4 id=&#34;103-热&#34;&gt;10.3 热
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;
+$$
+  C=\lim\limits_{\Delta T\to0}\dfrac{\Delta Q}{\Delta T}=\dfrac{\mathrm{d}\kern{-4.3pt}\bar{\small\phantom{q}}\kern{-0.7pt}Q}{\mathrm dT}
+  $$&lt;/li&gt;
+&lt;li&gt;
+$$
+  c=\dfrac{1}{m}\dfrac{\mathrm{d}\kern{-4.3pt}\bar{\small\phantom{q}}\kern{-0.7pt}Q}{\mathrm dT}
+  $$&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;摩尔热容&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+$$
+    C_{V,m}=\dfrac{i}{2}R
+    $$&lt;/li&gt;
+&lt;li&gt;
+$$
+    C_{p,m}=C_{V,m}+R
+    $$&lt;/li&gt;
+&lt;li&gt;
+$$
+    \gamma=\dfrac{C_{p,m}}{C_{V,m}}=\dfrac{i+2}{i}
+    $$&lt;p&gt;
+其中$i$是&lt;strong&gt;气体分子自由度&lt;/strong&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;104-准静态过程&#34;&gt;10.4 准静态过程
+&lt;/h4&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;过程&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;特征&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;过程方程&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;吸收热量$Q$&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;对外做功$A$&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;内能增量$\Delta E$&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;等容&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$V=C$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\frac{P_1}{T_1}=\frac{P_2}{T_2}$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\frac{m}{M}C_{V,m}(T_2-T_1)$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;0&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\frac{m}{M}C_{V,m}(T_2-T_1)$&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;等压&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$p=C$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\frac{V_1}{T_1}=\frac{V_2}{T_2}$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\frac{m}{M}C_{p,m}(T_2-T_1)$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$p(V_2-V_1)$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\frac{m}{M}C_{V,m}(T_2-T_1)$&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;等温&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$T=C$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$p_1V_1=p_2V_2$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\frac{m}{M}RT\ln\frac{V_1}{V_2}=\frac{m}{M}RT\ln\frac{p_1}{p_2}$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\frac{m}{M}RT\ln\frac{V_1}{V_2}=\frac{m}{M}RT\ln\frac{p_1}{p_2}$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;0&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;绝热&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$Q=0$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$pV^\gamma=C$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;0&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$-\frac{m}{M}C_{V,m}(T_2-T_1)$,$\frac{1}{\gamma-1}(p_1V_1-p_2V_2)$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\frac{m}{M}C_{V,m}(T_2-T_1)$&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;多方&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;———&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$pV^n=C$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\Delta E+A$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\frac{1}{n-1}(p_1V_1-p_2V_2)$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\frac{m}{M}C_{V,m}(T_2-T_1)$&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;font face=&#34;楷体&#34;&gt;注：1.上表的过程方程中，$C$表示常数。2.多方过程中的$n$为多方指数。&lt;/font&gt;&lt;/p&gt;
+&lt;h4 id=&#34;105-非静态绝热过程&#34;&gt;10.5 非静态绝热过程
+&lt;/h4&gt;&lt;p&gt;即绝热自由膨胀过程。此过程中气体内能不变，温度不变。不能用准静态过程的公式计算。&lt;/p&gt;
+&lt;h4 id=&#34;106-循环过程和卡诺循环&#34;&gt;10.6 循环过程和卡诺循环
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;热力学循环：$p-V$图中顺时针的循环为正循环、热循环；逆时针的为逆循环、制冷循环。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+$$
+  \eta=\dfrac{W}{Q_1}=1-\dfrac{Q_2}{Q_1}
+  $$&lt;p&gt;
+&lt;font face=&#34;楷体&#34;&gt;注：式中$Q_1$为从高温热源吸收热量，$Q_2$为向低温热源放出热量。均取正值。&lt;/font&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+$$
+  \varepsilon=\dfrac{Q_2}{W}=\dfrac{Q_2}{Q_1-Q_2}
+  $$&lt;p&gt;
+&lt;font face=&#34;楷体&#34;&gt;注：式中$Q_2$为向低温热源吸收热量，$Q_1$为向高温热源放出热量。&lt;/font&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+$$
+  \eta=1-\dfrac{T_2}{T_1}
+  $$&lt;/li&gt;
+&lt;li&gt;
+$$
+  \varepsilon=\dfrac{T_2}{T_1-T_2}
+  $$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;107-热力学第二定律和不可逆过程&#34;&gt;10.7 热力学第二定律和不可逆过程
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;开尔文表述：不可能制成一种循环动作的热机，只从单一热源吸取热量使之完全变为有用功而不产生任何其他影响。第二类永动机不可能制成。&lt;/li&gt;
+&lt;li&gt;克劳修斯表述：不可能把热量从低温物体传到高温物体而不引起其他任何变化。热量不可能自动地从低温传向高温。&lt;/li&gt;
+&lt;li&gt;一切和热现象有关的实际宏观过程都是不可逆的。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;108-卡诺定理&#34;&gt;10.8 卡诺定理
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;可逆热机效率$\eta=1-\dfrac{T_2}{T_1}$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;不可逆热机效率不大于可逆热机效率。&lt;/p&gt;
+&lt;p&gt;&lt;font face=&#34;楷体&#34;&gt;注：制冷机也有类似定理&lt;/font&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;109-熵&#34;&gt;10.9 熵
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;
+$$
+  \mathrm dS\geq\dfrac{\mathrm{d}\kern{-4.3pt}\bar{\small\phantom{q}}\kern{-0.7pt}Q}{\mathrm T}
+  $$&lt;p&gt;
+可逆过程取等号。&lt;/p&gt;
+$$
+  \Delta S=\displaystyle\int_1^2\mathrm dS=\displaystyle\int_1^2\dfrac{\mathrm{d}\kern{-4.3pt}\bar{\small\phantom{q}}\kern{-0.7pt}Q}{\mathrm T}
+  $$&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;熵增加原理：孤立系统，$\mathrm{d}\kern{-4.3pt}\bar{\small\phantom{q}}\kern{-0.7pt}Q=0$ ,$\mathrm dS\geq0$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;完结&#34;&gt;完结
+&lt;/h2&gt;</description>
+        </item>
+        <item>
         <title>初来乍到,请多指教</title>
         <link>https://icewatermeloncatisnotcat.github.io/icewatermeloncatisnotcat/p/%E5%88%9D%E6%9D%A5%E4%B9%8D%E5%88%B0%E8%AF%B7%E5%A4%9A%E6%8C%87%E6%95%99/</link>
         <pubDate>Thu, 16 Jan 2025 00:25:07 +0800</pubDate>
