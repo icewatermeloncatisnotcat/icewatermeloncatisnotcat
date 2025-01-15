@@ -7,7 +7,31 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>icewatermeloncatisnotcat</copyright>
-        <lastBuildDate>Wed, 15 Jan 2025 21:57:29 +0800</lastBuildDate><atom:link href="https://icewatermeloncatisnotcat.github.io/icewatermeloncatisnotcat/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 16 Jan 2025 00:02:21 +0800</lastBuildDate><atom:link href="https://icewatermeloncatisnotcat.github.io/icewatermeloncatisnotcat/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>New</title>
+        <link>https://icewatermeloncatisnotcat.github.io/icewatermeloncatisnotcat/p/new/</link>
+        <pubDate>Thu, 16 Jan 2025 00:02:21 +0800</pubDate>
+        
+        <guid>https://icewatermeloncatisnotcat.github.io/icewatermeloncatisnotcat/p/new/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Newnew</title>
+        <link>https://icewatermeloncatisnotcat.github.io/icewatermeloncatisnotcat/p/newnew/</link>
+        <pubDate>Wed, 15 Jan 2025 23:45:37 +0800</pubDate>
+        
+        <guid>https://icewatermeloncatisnotcat.github.io/icewatermeloncatisnotcat/p/newnew/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Newnewnew</title>
+        <link>https://icewatermeloncatisnotcat.github.io/icewatermeloncatisnotcat/p/newnewnew/</link>
+        <pubDate>Wed, 15 Jan 2025 23:29:46 +0800</pubDate>
+        
+        <guid>https://icewatermeloncatisnotcat.github.io/icewatermeloncatisnotcat/p/newnewnew/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>MyFirstBlog</title>
         <link>https://icewatermeloncatisnotcat.github.io/icewatermeloncatisnotcat/p/myfirstblog/</link>
         <pubDate>Wed, 15 Jan 2025 21:57:29 +0800</pubDate>
