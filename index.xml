@@ -7,7 +7,55 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>icewatermeloncatisnotcat</copyright>
-        <lastBuildDate>Thu, 16 Jan 2025 00:31:44 +0800</lastBuildDate><atom:link href="https://icewatermeloncatisnotcat.github.io/icewatermeloncatisnotcat/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 25 Feb 2025 10:08:48 +0800</lastBuildDate><atom:link href="https://icewatermeloncatisnotcat.github.io/icewatermeloncatisnotcat/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>信号处理</title>
+        <link>https://icewatermeloncatisnotcat.github.io/icewatermeloncatisnotcat/p/%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86/</link>
+        <pubDate>Tue, 25 Feb 2025 10:08:48 +0800</pubDate>
+        
+        <guid>https://icewatermeloncatisnotcat.github.io/icewatermeloncatisnotcat/p/%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86/</guid>
+        <description>&lt;h1 id=&#34;第一章-信号与系统分析的理论基础&#34;&gt;第一章 信号与系统分析的理论基础
+&lt;/h1&gt;&lt;h2 id=&#34;11-信号与系统的研究内容&#34;&gt;1.1 信号与系统的研究内容
+&lt;/h2&gt;&lt;h3 id=&#34;1-信号的概念和分类&#34;&gt;1 信号的概念和分类
+&lt;/h3&gt;&lt;h4 id=&#34;概念消息的运载工具和表现形式&#34;&gt;概念：消息的运载工具和表现形式
+&lt;/h4&gt;&lt;h4 id=&#34;描述时间的函数波形频谱正交&#34;&gt;描述：时间的函数、波形、频谱、正交……
+&lt;/h4&gt;&lt;h4 id=&#34;分类&#34;&gt;分类
+&lt;/h4&gt;&lt;p&gt;（1）确定性信号和随机信号：确定信号是可以用确定时间函数表示的信号，应用于控制系统；随机信号在任意时刻的取值具有不确定性，只能知道它的统计特性或某一时刻取值的概率，应用于通信系统。&lt;/p&gt;
+&lt;p&gt;（2）周期信号和非周期信号&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;两个周期信号之和不一定是周期信号&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;（3）连续时间信号和离散时间信号&lt;/p&gt;
+&lt;p&gt;（4）一维信号和多维信号&lt;/p&gt;
+$$
+E=\int_{-\infty}^{+\infty}|f(t)|^2\mathrm{d}t \\ P=\displaystyle\lim_{T\to \infty}\dfrac{1}{T}\int_{-\frac{T}{2}}^\frac{T}{2}|f(t)|^2\mathrm{d}t
+$$&lt;p&gt;
+​	若能量有界则称为能量信号，若功率有界称为功率信号。&lt;/p&gt;
+&lt;p&gt;​	直流信号与周期信号都是功率信号。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;一个信号不能既是能量信号又是功率信号&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2-系统的描述和分类&#34;&gt;2 系统的描述和分类
+&lt;/h3&gt;&lt;h4 id=&#34;概念若干相互作用和相互依赖的事物所组成的具有特定功能的整体&#34;&gt;概念：若干相互作用和相互依赖的事物所组成的具有特定功能的整体。
+&lt;/h4&gt;$$
+e(t)\to 系统 \to r(t)
+$$&lt;h4 id=&#34;分类-1&#34;&gt;分类：
+&lt;/h4&gt;&lt;p&gt;（1）连续时间系统和离散时间系统&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;连续时间系统用微分方程，离散时间系统用差分方程&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;（2）即时系统和动态系统&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;即时系统：输出决定于同时刻输入&lt;/li&gt;
+&lt;li&gt;动态系统：输出与历史输入有关&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;（3）集总参数系统和分布参数系统&lt;/p&gt;
+&lt;p&gt;（4）线性系统和非线性系统：线性系统满足叠加性和齐次性&lt;/p&gt;
+&lt;p&gt;（5）时变系统和时不变系统：参数是否随时间变化&lt;/p&gt;
+&lt;p&gt;（6）因果系统和非因果系统：输出变化在输入变化之后/之前&lt;/p&gt;
+&lt;p&gt;（7）稳定系统和不稳定系统：有界输入$\to$有界输出&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>HIT大学物理知识点总结</title>
         <link>https://icewatermeloncatisnotcat.github.io/icewatermeloncatisnotcat/p/hit%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/</link>
         <pubDate>Thu, 16 Jan 2025 00:31:44 +0800</pubDate>
@@ -303,13 +351,12 @@ $$
 不告而别的你 就算为了我着想&lt;br&gt;
 这么沉痛的呵护 我怎么能翱翔&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/watch?v=3aypp_YlBzI&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;最暖的憂傷 - 田馥甄&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+    &gt;最暖的憂傷 - 田馥甄&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h2 id=&#34;图片&#34;&gt;图片
-&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://icewatermeloncatisnotcat.github.io/icewatermeloncatisnotcat/icewatermeloncatisnotcat/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash.jpg&#34;
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://icewatermeloncatisnotcat.github.io/icewatermeloncatisnotcat/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash.jpg&#34;
 	width=&#34;667&#34;
 	height=&#34;1000&#34;
-	srcset=&#34;https://icewatermeloncatisnotcat.github.io/icewatermeloncatisnotcat/icewatermeloncatisnotcat/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash_hu13768363498926278726.jpg 480w, https://icewatermeloncatisnotcat.github.io/icewatermeloncatisnotcat/icewatermeloncatisnotcat/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash_hu13380208884366868750.jpg 1024w&#34;
+	srcset=&#34;https://icewatermeloncatisnotcat.github.io/icewatermeloncatisnotcat/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash_hu_e98fca2b4272416e.jpg 480w, https://icewatermeloncatisnotcat.github.io/icewatermeloncatisnotcat/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash_hu_e3d37c9ded115b12.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Photo by Florian Klauer on Unsplash&#34;
@@ -319,10 +366,10 @@ $$
 		data-flex-grow=&#34;66&#34;
 		data-flex-basis=&#34;160px&#34;
 	
-&gt;  &lt;img src=&#34;https://icewatermeloncatisnotcat.github.io/icewatermeloncatisnotcat/icewatermeloncatisnotcat/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash.jpg&#34;
+&gt;  &lt;img src=&#34;https://icewatermeloncatisnotcat.github.io/icewatermeloncatisnotcat/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash.jpg&#34;
 	width=&#34;1000&#34;
 	height=&#34;667&#34;
-	srcset=&#34;https://icewatermeloncatisnotcat.github.io/icewatermeloncatisnotcat/icewatermeloncatisnotcat/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash_hu1712544344331247820.jpg 480w, https://icewatermeloncatisnotcat.github.io/icewatermeloncatisnotcat/icewatermeloncatisnotcat/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash_hu12475395149584884402.jpg 1024w&#34;
+	srcset=&#34;https://icewatermeloncatisnotcat.github.io/icewatermeloncatisnotcat/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash_hu_e13c58d5189f892c.jpg 480w, https://icewatermeloncatisnotcat.github.io/icewatermeloncatisnotcat/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash_hu_8fc948b7ee525251.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Photo by Luca Bravo on Unsplash&#34;
@@ -333,10 +380,10 @@ $$
 		data-flex-basis=&#34;359px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://icewatermeloncatisnotcat.github.io/icewatermeloncatisnotcat/icewatermeloncatisnotcat/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash.jpg&#34;
+&lt;p&gt;&lt;img src=&#34;https://icewatermeloncatisnotcat.github.io/icewatermeloncatisnotcat/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash.jpg&#34;
 	width=&#34;1000&#34;
 	height=&#34;750&#34;
-	srcset=&#34;https://icewatermeloncatisnotcat.github.io/icewatermeloncatisnotcat/icewatermeloncatisnotcat/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash_hu8363585391189779282.jpg 480w, https://icewatermeloncatisnotcat.github.io/icewatermeloncatisnotcat/icewatermeloncatisnotcat/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash_hu15102473124145023839.jpg 1024w&#34;
+	srcset=&#34;https://icewatermeloncatisnotcat.github.io/icewatermeloncatisnotcat/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash_hu_503c0ebcc5245e10.jpg 480w, https://icewatermeloncatisnotcat.github.io/icewatermeloncatisnotcat/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash_hu_48c98de55fb3c999.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Photo by Helena Hertz on Unsplash&#34;
@@ -346,10 +393,10 @@ $$
 		data-flex-grow=&#34;133&#34;
 		data-flex-basis=&#34;320px&#34;
 	
-&gt;  &lt;img src=&#34;https://icewatermeloncatisnotcat.github.io/icewatermeloncatisnotcat/icewatermeloncatisnotcat/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash.jpg&#34;
+&gt;  &lt;img src=&#34;https://icewatermeloncatisnotcat.github.io/icewatermeloncatisnotcat/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash.jpg&#34;
 	width=&#34;667&#34;
 	height=&#34;1000&#34;
-	srcset=&#34;https://icewatermeloncatisnotcat.github.io/icewatermeloncatisnotcat/icewatermeloncatisnotcat/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash_hu15886963791847885497.jpg 480w, https://icewatermeloncatisnotcat.github.io/icewatermeloncatisnotcat/icewatermeloncatisnotcat/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash_hu11726476772237334826.jpg 1024w&#34;
+	srcset=&#34;https://icewatermeloncatisnotcat.github.io/icewatermeloncatisnotcat/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash_hu_f81a3588c5c4a663.jpg 480w, https://icewatermeloncatisnotcat.github.io/icewatermeloncatisnotcat/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash_hu_1c52ba2a4ad7b9a0.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Photo by Hudai Gayiran on Unsplash&#34;
@@ -407,13 +454,11 @@ $$
 &lt;h4 id=&#34;blockquote-without-attribution&#34;&gt;Blockquote without attribution
 &lt;/h4&gt;&lt;blockquote&gt;
 &lt;p&gt;Tiam, ad mint andaepu dandae nostion secatur sequo quae.
-&lt;strong&gt;Note&lt;/strong&gt; that you can use &lt;em&gt;Markdown syntax&lt;/em&gt; within a blockquote.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;strong&gt;Note&lt;/strong&gt; that you can use &lt;em&gt;Markdown syntax&lt;/em&gt; within a blockquote.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h4 id=&#34;blockquote-with-attribution&#34;&gt;Blockquote with attribution
 &lt;/h4&gt;&lt;blockquote&gt;
 &lt;p&gt;Don&amp;rsquo;t communicate by sharing memory, share memory by communicating.&lt;br&gt;
-— &lt;cite&gt;Rob Pike&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/cite&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+— &lt;cite&gt;Rob Pike&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/cite&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h2 id=&#34;tables&#34;&gt;Tables
 &lt;/h2&gt;&lt;p&gt;Tables aren&amp;rsquo;t part of the core Markdown spec, but Hugo supports supports them out-of-the-box.&lt;/p&gt;
 &lt;table&gt;
