@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>信号处理 on 冰瓜猫不是猫</title>
+        <link>https://icewatermeloncatisnotcat.github.io/icewatermeloncatisnotcat/categories/%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86/</link>
+        <description>Recent content in 信号处理 on 冰瓜猫不是猫</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>icewatermeloncatisnotcat</copyright>
+        <lastBuildDate>Tue, 25 Feb 2025 10:08:48 +0800</lastBuildDate><atom:link href="https://icewatermeloncatisnotcat.github.io/icewatermeloncatisnotcat/categories/%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>信号处理</title>
+        <link>https://icewatermeloncatisnotcat.github.io/icewatermeloncatisnotcat/p/%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86/</link>
+        <pubDate>Tue, 25 Feb 2025 10:08:48 +0800</pubDate>
+        
+        <guid>https://icewatermeloncatisnotcat.github.io/icewatermeloncatisnotcat/p/%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86/</guid>
+        <description>&lt;h1 id=&#34;第一章-信号与系统分析的理论基础&#34;&gt;第一章 信号与系统分析的理论基础
+&lt;/h1&gt;&lt;h2 id=&#34;11-信号与系统的研究内容&#34;&gt;1.1 信号与系统的研究内容
+&lt;/h2&gt;&lt;h3 id=&#34;1-信号的概念和分类&#34;&gt;1 信号的概念和分类
+&lt;/h3&gt;&lt;h4 id=&#34;概念消息的运载工具和表现形式&#34;&gt;概念：消息的运载工具和表现形式
+&lt;/h4&gt;&lt;h4 id=&#34;描述时间的函数波形频谱正交&#34;&gt;描述：时间的函数、波形、频谱、正交……
+&lt;/h4&gt;&lt;h4 id=&#34;分类&#34;&gt;分类
+&lt;/h4&gt;&lt;p&gt;（1）确定性信号和随机信号：确定信号是可以用确定时间函数表示的信号，应用于控制系统；随机信号在任意时刻的取值具有不确定性，只能知道它的统计特性或某一时刻取值的概率，应用于通信系统。&lt;/p&gt;
+&lt;p&gt;（2）周期信号和非周期信号&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;两个周期信号之和不一定是周期信号&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;（3）连续时间信号和离散时间信号&lt;/p&gt;
+&lt;p&gt;（4）一维信号和多维信号&lt;/p&gt;
+$$
+E=\int_{-\infty}^{+\infty}|f(t)|^2\mathrm{d}t \\ P=\displaystyle\lim_{T\to \infty}\dfrac{1}{T}\int_{-\frac{T}{2}}^\frac{T}{2}|f(t)|^2\mathrm{d}t
+$$&lt;p&gt;
+​	若能量有界则称为能量信号，若功率有界称为功率信号。&lt;/p&gt;
+&lt;p&gt;​	直流信号与周期信号都是功率信号。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;一个信号不能既是能量信号又是功率信号&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2-系统的描述和分类&#34;&gt;2 系统的描述和分类
+&lt;/h3&gt;&lt;h4 id=&#34;概念若干相互作用和相互依赖的事物所组成的具有特定功能的整体&#34;&gt;概念：若干相互作用和相互依赖的事物所组成的具有特定功能的整体。
+&lt;/h4&gt;$$
+e(t)\to 系统 \to r(t)
+$$&lt;h4 id=&#34;分类-1&#34;&gt;分类：
+&lt;/h4&gt;&lt;p&gt;（1）连续时间系统和离散时间系统&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;连续时间系统用微分方程，离散时间系统用差分方程&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;（2）即时系统和动态系统&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;即时系统：输出决定于同时刻输入&lt;/li&gt;
+&lt;li&gt;动态系统：输出与历史输入有关&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;（3）集总参数系统和分布参数系统&lt;/p&gt;
+&lt;p&gt;（4）线性系统和非线性系统：线性系统满足叠加性和齐次性&lt;/p&gt;
+&lt;p&gt;（5）时变系统和时不变系统：参数是否随时间变化&lt;/p&gt;
+&lt;p&gt;（6）因果系统和非因果系统：输出变化在输入变化之后/之前&lt;/p&gt;
+&lt;p&gt;（7）稳定系统和不稳定系统：有界输入$\to$有界输出&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
