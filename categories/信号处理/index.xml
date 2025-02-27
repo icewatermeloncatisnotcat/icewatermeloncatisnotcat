@@ -53,6 +53,123 @@ $$&lt;h4 id=&#34;分类-1&#34;&gt;分类：
 &lt;p&gt;（5）时变系统和时不变系统：参数是否随时间变化&lt;/p&gt;
 &lt;p&gt;（6）因果系统和非因果系统：输出变化在输入变化之后/之前&lt;/p&gt;
 &lt;p&gt;（7）稳定系统和不稳定系统：有界输入$\to$有界输出&lt;/p&gt;
+&lt;h2 id=&#34;12-信号描述与信号运算&#34;&gt;1.2 信号描述与信号运算
+&lt;/h2&gt;&lt;h3 id=&#34;1-典型连续时间信号&#34;&gt;1 典型连续时间信号
+&lt;/h3&gt;&lt;h4 id=&#34;1指数信号&#34;&gt;1.指数信号
+&lt;/h4&gt;&lt;p&gt;表达式：$f(t)=K\mathrm e^{at}$
+$\begin{aligned} a&amp;amp;&amp;gt;0 \qquad 幅度增长 \ a&amp;amp;=0 \qquad 直流 \ a&amp;amp;&amp;lt;0 \qquad 幅度衰减 \end{aligned}$
+定义$\tau=\dfrac{1}{|a|}$为时间常数，$\tau$越大表示衰减或增长速度越慢
+特性：微积分后仍是指数信号&lt;/p&gt;
+&lt;h4 id=&#34;2正弦信号&#34;&gt;2.正弦信号
+&lt;/h4&gt;&lt;p&gt;表达式：$f(t)=K\sin(\omega t+\theta)$
+参数：$K$是振幅，$\omega$是角频率，$\theta$是初相位
+特性：是周期信号，微积分后还是正弦信号&lt;/p&gt;
+&lt;h4 id=&#34;3衰减正弦信号单边&#34;&gt;3.衰减正弦信号（单边）
+&lt;/h4&gt;$$
+    f(t)=
+    \begin{cases}
+        0 \qquad t&lt;0 \\
+        K\mathrm e^{-at}\sin \omega t \qquad t\geq 0
+    \end{cases}
+$$&lt;p&gt;
+特性：正弦震荡的幅度规律衰减&lt;/p&gt;
+&lt;h4 id=&#34;4复指数信号&#34;&gt;4.复指数信号
+&lt;/h4&gt;&lt;p&gt;表达式：$f(t)=K\mathrm e^{(\sigma+\mathrm j\omega)t}=K\mathrm e^{\sigma t}(\cos\omega t+\mathrm j\sin\omega t)$
+参数：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$\sigma$为指数因子实部&lt;/li&gt;
+&lt;li&gt;$\omega$为振动角频率&lt;/li&gt;
+&lt;/ul&gt;
+$$
+    \sin\omega t=\dfrac{1}{2\mathrm j}(\mathrm e^{\mathrm{j}\omega t}-\mathrm e^{-\mathrm{j}\omega t})\\\cos\omega t=\dfrac{1}{2}(\mathrm e^{\mathrm{j}\omega t}+\mathrm e^{-\mathrm{j}\omega t})
+$$&lt;p&gt;
+实际上不存在，但是可以用来概括各种基本信号简化分析&lt;/p&gt;
+&lt;h4 id=&#34;5抽样信号&#34;&gt;5.抽样信号
+&lt;/h4&gt;&lt;p&gt;表达式：$\mathrm{Sa}(t)=\dfrac{\sin t}{t}$
+特性：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;零点为$\pi$的整数倍&lt;/li&gt;
+&lt;li&gt;偶函数&lt;/li&gt;
+&lt;li&gt;两边衰减&lt;/li&gt;
+&lt;li&gt;能量集中在$(-\pi,\pi)$&lt;/li&gt;
+&lt;li&gt;$\displaystyle\int_0^{+\infty}\mathrm{Sa}(t)\mathrm{d}t=\dfrac{\pi}{2}\qquad \displaystyle\int_{-\infty}^{+\infty}\mathrm{Sa}(t)\mathrm{d}t=\pi$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;6高斯函数&#34;&gt;6.高斯函数
+&lt;/h4&gt;&lt;p&gt;表达式：$f(t)=E\mathrm{e}^{-(\frac{t}{\tau})^2}$
+特性：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$\displaystyle\int_{-\infty}^{+\infty}\mathrm{e}^{-(\frac{t}{\tau})^2}\mathrm{d}t=\sqrt{\pi}\tau$&lt;/li&gt;
+&lt;li&gt;$f(\frac{\tau}{2})=E\mathrm{e}^{-\frac{1}{4}}=0.78E$&lt;/li&gt;
+&lt;li&gt;其傅里叶变换仍然是高斯信号&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2-奇异信号&#34;&gt;2 奇异信号
+&lt;/h3&gt;&lt;p&gt;信号本身含有不连续点或其导数与积分含有不连续点的函数&lt;/p&gt;
+&lt;h4 id=&#34;1单位斜变信号&#34;&gt;1.单位斜变信号
+&lt;/h4&gt;$$
+    R(t)=
+    \begin{cases}
+        0 \qquad t&lt;0 \\ t \qquad t\geq 0
+    \end{cases}
+$$&lt;h4 id=&#34;2矩形脉冲&#34;&gt;2.矩形脉冲
+&lt;/h4&gt;$$
+    R_\tau(t)=
+    \begin{cases}
+        1 \qquad &amp;0\leq t\leq \tau \\ 0 \qquad &amp;t&lt;0,t&gt;\tau
+    \end{cases}\\
+    G_\tau(t)=
+    \begin{cases}
+        1 \qquad &amp;-\frac{\tau}{2}\leq t \leq \frac{\tau}{2}\\
+        0 \qquad &amp;|t|&gt;\frac{\tau}{2}
+    \end{cases}
+$$&lt;h4 id=&#34;3符号函数&#34;&gt;3.符号函数
+&lt;/h4&gt;$$
+    \mathrm{sgn}(t)=
+    \begin{cases}
+        -1 \qquad &amp;t&lt;0 \\
+        1 \qquad &amp;t&gt;0
+    \end{cases}
+$$&lt;h4 id=&#34;4单位阶跃信号&#34;&gt;4.单位阶跃信号
+&lt;/h4&gt;&lt;p&gt;$\mathrm u(t)=\begin{cases}
+0 \qquad t&amp;lt;0 \ 1 \qquad t&amp;gt;0
+\end{cases}$
+$t=0$处无定义&lt;/p&gt;
+&lt;h4 id=&#34;5单位冲激信号&#34;&gt;5.单位冲激信号
+&lt;/h4&gt;$$\delta(t)=\displaystyle\lim_{\tau\to 0}\dfrac{1}{\tau}[\mathrm{u}(t+\dfrac{\tau}{2})-\mathrm{u}(t-\dfrac{\tau}{2})]$$&lt;p&gt;
+1.筛选特性：$f(t)\delta(t-t_0)=f(t_0)\delta(t-t_0)$
+推论：$f(t)\delta(t)=f(0)\delta(t) \ \dfrac{\mathrm d}{\mathrm dt}[f(t)\delta(t)]=f(0)\delta^\prime(t)$
+2.抽样特性：$\displaystyle\int_{-\infty}^{+\infty}f(t)\delta(t-t_0)\mathrm{d}t=f(t_0)$
+3.冲激函数的积分等于阶跃函数，阶跃函数的微分等于冲激函数
+4.偶函数
+5.展缩特性：$\delta(at)=\dfrac{1}{|a|}\delta(t)\ \delta(at-t_0)=\dfrac{1}{|a|}\delta(t-\dfrac{t_0}{a})$&lt;/p&gt;
+&lt;h3 id=&#34;3-信号运算&#34;&gt;3 信号运算
+&lt;/h3&gt;&lt;h4 id=&#34;1平移&#34;&gt;1.平移
+&lt;/h4&gt;&lt;p&gt;$f(t)\to f(t+t_0)$，左移
+$f(t)\to f(t-t_0)$，右移&lt;/p&gt;
+&lt;h4 id=&#34;2翻转&#34;&gt;2.翻转
+&lt;/h4&gt;&lt;p&gt;$f(t)\to f(-t)$&lt;/p&gt;
+&lt;h4 id=&#34;3尺度&#34;&gt;3.尺度
+&lt;/h4&gt;&lt;p&gt;$f(t)\to f(at)\qquad a&amp;gt;0$
+当$\begin{cases}
+a&amp;gt;1\qquad 时间轴上压缩\a&amp;lt;1 \qquad 时间轴上扩展
+\end{cases}$&lt;/p&gt;
+&lt;h4 id=&#34;4微分&#34;&gt;4.微分
+&lt;/h4&gt;&lt;h4 id=&#34;5积分&#34;&gt;5.积分
+&lt;/h4&gt;&lt;h4 id=&#34;6信号相加&#34;&gt;6.信号相加
+&lt;/h4&gt;&lt;h4 id=&#34;7信号相乘&#34;&gt;7.信号相乘
+&lt;/h4&gt;&lt;p&gt;常用于调制解调&lt;/p&gt;
+&lt;h4 id=&#34;8卷积&#34;&gt;8.卷积
+&lt;/h4&gt;&lt;p&gt;$f(t)=f_1(t)*f_2(t)=\displaystyle\int_{-\infty}^{+\infty}f_1(\tau)f_2(t-\tau)\mathrm{d}\tau$
+计算步骤：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;图解计算：将$f_1(t)$和$f_2(t)$中的自变量由$t$改成$\tau$，对其中任意一个信号翻转，平移$t$，例如$f_2(\tau)\to f_2(-\tau)\to f_2(t-\tau)$，将二者相乘，对乘积后的图形积分&lt;/li&gt;
+&lt;li&gt;解析计算：直接带入定义式&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;卷积的性质：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;交换律&lt;/li&gt;
+&lt;li&gt;分配律&lt;/li&gt;
+&lt;li&gt;结合律&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         </item>
         

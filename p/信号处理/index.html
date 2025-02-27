@@ -309,6 +309,41 @@
         </li>
       </ol>
     </li>
+    <li><a href="#12-信号描述与信号运算">1.2 信号描述与信号运算</a>
+      <ol>
+        <li><a href="#1-典型连续时间信号">1 典型连续时间信号</a>
+          <ol>
+            <li><a href="#1指数信号">1.指数信号</a></li>
+            <li><a href="#2正弦信号">2.正弦信号</a></li>
+            <li><a href="#3衰减正弦信号单边">3.衰减正弦信号（单边）</a></li>
+            <li><a href="#4复指数信号">4.复指数信号</a></li>
+            <li><a href="#5抽样信号">5.抽样信号</a></li>
+            <li><a href="#6高斯函数">6.高斯函数</a></li>
+          </ol>
+        </li>
+        <li><a href="#2-奇异信号">2 奇异信号</a>
+          <ol>
+            <li><a href="#1单位斜变信号">1.单位斜变信号</a></li>
+            <li><a href="#2矩形脉冲">2.矩形脉冲</a></li>
+            <li><a href="#3符号函数">3.符号函数</a></li>
+            <li><a href="#4单位阶跃信号">4.单位阶跃信号</a></li>
+            <li><a href="#5单位冲激信号">5.单位冲激信号</a></li>
+          </ol>
+        </li>
+        <li><a href="#3-信号运算">3 信号运算</a>
+          <ol>
+            <li><a href="#1平移">1.平移</a></li>
+            <li><a href="#2翻转">2.翻转</a></li>
+            <li><a href="#3尺度">3.尺度</a></li>
+            <li><a href="#4微分">4.微分</a></li>
+            <li><a href="#5积分">5.积分</a></li>
+            <li><a href="#6信号相加">6.信号相加</a></li>
+            <li><a href="#7信号相乘">7.信号相乘</a></li>
+            <li><a href="#8卷积">8.卷积</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
   </ol>
 </nav>
         </div>
@@ -381,7 +416,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 2 分钟
+                    阅读时长: 4 分钟
                 </time>
             </div>
         
@@ -436,6 +471,123 @@ $$<h4 id="分类-1">分类：
 <p>（5）时变系统和时不变系统：参数是否随时间变化</p>
 <p>（6）因果系统和非因果系统：输出变化在输入变化之后/之前</p>
 <p>（7）稳定系统和不稳定系统：有界输入$\to$有界输出</p>
+<h2 id="12-信号描述与信号运算">1.2 信号描述与信号运算
+</h2><h3 id="1-典型连续时间信号">1 典型连续时间信号
+</h3><h4 id="1指数信号">1.指数信号
+</h4><p>表达式：$f(t)=K\mathrm e^{at}$
+$\begin{aligned} a&amp;&gt;0 \qquad 幅度增长 \ a&amp;=0 \qquad 直流 \ a&amp;&lt;0 \qquad 幅度衰减 \end{aligned}$
+定义$\tau=\dfrac{1}{|a|}$为时间常数，$\tau$越大表示衰减或增长速度越慢
+特性：微积分后仍是指数信号</p>
+<h4 id="2正弦信号">2.正弦信号
+</h4><p>表达式：$f(t)=K\sin(\omega t+\theta)$
+参数：$K$是振幅，$\omega$是角频率，$\theta$是初相位
+特性：是周期信号，微积分后还是正弦信号</p>
+<h4 id="3衰减正弦信号单边">3.衰减正弦信号（单边）
+</h4>$$
+    f(t)=
+    \begin{cases}
+        0 \qquad t<0 \\
+        K\mathrm e^{-at}\sin \omega t \qquad t\geq 0
+    \end{cases}
+$$<p>
+特性：正弦震荡的幅度规律衰减</p>
+<h4 id="4复指数信号">4.复指数信号
+</h4><p>表达式：$f(t)=K\mathrm e^{(\sigma+\mathrm j\omega)t}=K\mathrm e^{\sigma t}(\cos\omega t+\mathrm j\sin\omega t)$
+参数：</p>
+<ul>
+<li>$\sigma$为指数因子实部</li>
+<li>$\omega$为振动角频率</li>
+</ul>
+$$
+    \sin\omega t=\dfrac{1}{2\mathrm j}(\mathrm e^{\mathrm{j}\omega t}-\mathrm e^{-\mathrm{j}\omega t})\\\cos\omega t=\dfrac{1}{2}(\mathrm e^{\mathrm{j}\omega t}+\mathrm e^{-\mathrm{j}\omega t})
+$$<p>
+实际上不存在，但是可以用来概括各种基本信号简化分析</p>
+<h4 id="5抽样信号">5.抽样信号
+</h4><p>表达式：$\mathrm{Sa}(t)=\dfrac{\sin t}{t}$
+特性：</p>
+<ul>
+<li>零点为$\pi$的整数倍</li>
+<li>偶函数</li>
+<li>两边衰减</li>
+<li>能量集中在$(-\pi,\pi)$</li>
+<li>$\displaystyle\int_0^{+\infty}\mathrm{Sa}(t)\mathrm{d}t=\dfrac{\pi}{2}\qquad \displaystyle\int_{-\infty}^{+\infty}\mathrm{Sa}(t)\mathrm{d}t=\pi$</li>
+</ul>
+<h4 id="6高斯函数">6.高斯函数
+</h4><p>表达式：$f(t)=E\mathrm{e}^{-(\frac{t}{\tau})^2}$
+特性：</p>
+<ul>
+<li>$\displaystyle\int_{-\infty}^{+\infty}\mathrm{e}^{-(\frac{t}{\tau})^2}\mathrm{d}t=\sqrt{\pi}\tau$</li>
+<li>$f(\frac{\tau}{2})=E\mathrm{e}^{-\frac{1}{4}}=0.78E$</li>
+<li>其傅里叶变换仍然是高斯信号</li>
+</ul>
+<h3 id="2-奇异信号">2 奇异信号
+</h3><p>信号本身含有不连续点或其导数与积分含有不连续点的函数</p>
+<h4 id="1单位斜变信号">1.单位斜变信号
+</h4>$$
+    R(t)=
+    \begin{cases}
+        0 \qquad t<0 \\ t \qquad t\geq 0
+    \end{cases}
+$$<h4 id="2矩形脉冲">2.矩形脉冲
+</h4>$$
+    R_\tau(t)=
+    \begin{cases}
+        1 \qquad &0\leq t\leq \tau \\ 0 \qquad &t<0,t>\tau
+    \end{cases}\\
+    G_\tau(t)=
+    \begin{cases}
+        1 \qquad &-\frac{\tau}{2}\leq t \leq \frac{\tau}{2}\\
+        0 \qquad &|t|>\frac{\tau}{2}
+    \end{cases}
+$$<h4 id="3符号函数">3.符号函数
+</h4>$$
+    \mathrm{sgn}(t)=
+    \begin{cases}
+        -1 \qquad &t<0 \\
+        1 \qquad &t>0
+    \end{cases}
+$$<h4 id="4单位阶跃信号">4.单位阶跃信号
+</h4><p>$\mathrm u(t)=\begin{cases}
+0 \qquad t&lt;0 \ 1 \qquad t&gt;0
+\end{cases}$
+$t=0$处无定义</p>
+<h4 id="5单位冲激信号">5.单位冲激信号
+</h4>$$\delta(t)=\displaystyle\lim_{\tau\to 0}\dfrac{1}{\tau}[\mathrm{u}(t+\dfrac{\tau}{2})-\mathrm{u}(t-\dfrac{\tau}{2})]$$<p>
+1.筛选特性：$f(t)\delta(t-t_0)=f(t_0)\delta(t-t_0)$
+推论：$f(t)\delta(t)=f(0)\delta(t) \ \dfrac{\mathrm d}{\mathrm dt}[f(t)\delta(t)]=f(0)\delta^\prime(t)$
+2.抽样特性：$\displaystyle\int_{-\infty}^{+\infty}f(t)\delta(t-t_0)\mathrm{d}t=f(t_0)$
+3.冲激函数的积分等于阶跃函数，阶跃函数的微分等于冲激函数
+4.偶函数
+5.展缩特性：$\delta(at)=\dfrac{1}{|a|}\delta(t)\ \delta(at-t_0)=\dfrac{1}{|a|}\delta(t-\dfrac{t_0}{a})$</p>
+<h3 id="3-信号运算">3 信号运算
+</h3><h4 id="1平移">1.平移
+</h4><p>$f(t)\to f(t+t_0)$，左移
+$f(t)\to f(t-t_0)$，右移</p>
+<h4 id="2翻转">2.翻转
+</h4><p>$f(t)\to f(-t)$</p>
+<h4 id="3尺度">3.尺度
+</h4><p>$f(t)\to f(at)\qquad a&gt;0$
+当$\begin{cases}
+a&gt;1\qquad 时间轴上压缩\a&lt;1 \qquad 时间轴上扩展
+\end{cases}$</p>
+<h4 id="4微分">4.微分
+</h4><h4 id="5积分">5.积分
+</h4><h4 id="6信号相加">6.信号相加
+</h4><h4 id="7信号相乘">7.信号相乘
+</h4><p>常用于调制解调</p>
+<h4 id="8卷积">8.卷积
+</h4><p>$f(t)=f_1(t)*f_2(t)=\displaystyle\int_{-\infty}^{+\infty}f_1(\tau)f_2(t-\tau)\mathrm{d}\tau$
+计算步骤：</p>
+<ul>
+<li>图解计算：将$f_1(t)$和$f_2(t)$中的自变量由$t$改成$\tau$，对其中任意一个信号翻转，平移$t$，例如$f_2(\tau)\to f_2(-\tau)\to f_2(t-\tau)$，将二者相乘，对乘积后的图形积分</li>
+<li>解析计算：直接带入定义式</li>
+</ul>
+<p>卷积的性质：</p>
+<ul>
+<li>交换律</li>
+<li>分配律</li>
+<li>结合律</li>
+</ul>
 
 </section>
 
