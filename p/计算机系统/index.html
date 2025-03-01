@@ -299,6 +299,21 @@
         <li><a href="#计算机系统层次模型">计算机系统层次模型</a></li>
       </ol>
     </li>
+    <li><a href="#第二节课">第二节课</a>
+      <ol>
+        <li><a href="#信息的位表示">信息的位表示</a>
+          <ol>
+            <li><a href="#位字节">位，字节</a></li>
+            <li><a href="#进制表示">进制表示</a></li>
+            <li><a href="#进制转换">进制转换</a></li>
+            <li><a href="#面向字节的内存组织管理">面向字节的内存组织管理</a></li>
+            <li><a href="#机器字">机器字</a></li>
+            <li><a href="#面向字的内存组织管理">面向字的内存组织管理</a></li>
+            <li><a href="#字节序">字节序</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
   </ol>
 </nav>
         </div>
@@ -371,7 +386,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 1 分钟
+                    阅读时长: 2 分钟
                 </time>
             </div>
         
@@ -432,6 +447,102 @@
 	
 	
 ></a></p>
+<h2 id="第二节课">第二节课
+</h2><h3 id="信息的位表示">信息的位表示
+</h3><h4 id="位字节">位，字节
+</h4><h5 id="位比特">位（比特）
+</h5><p>最底层的二进制数字，值为0或1</p>
+<h5 id="位组合">位组合
+</h5><p>把位组合到一起，用某种规则解读</p>
+<h5 id="字节">字节
+</h5><p>8bit块，byte</p>
+<h4 id="进制表示">进制表示
+</h4><h5 id="数的通用表示">数的通用表示
+</h5><p>十进制：$3721=3\times 10^3+7\times 10^1+2\times 10^1+1\times 10^0$
+二进制：$a_na_{n-1} \dots a_1a_0.b_1b_2\dots b_m=a_n\times 2^n+\dots + a_0\times 2^0+b_1\times 2^{-1}+\dots+b_m\times 2^{-m}$</p>
+<h5 id="二进制数">二进制数
+</h5><p>最高有效位：MSB
+最低有效位：LSB
+二进制数数字串长不易阅读</p>
+<h5 id="十六进制数">十六进制数
+</h5><p>0，1，2，3，4，5，6，7，8，9，A，B，C，D，E，F
+二进制数和十六进制数有对应关系，每四个二进制位对应一个十六进制位</p>
+<h4 id="进制转换">进制转换
+</h4><h5 id="k进制转换为十进制按权展开">k进制转换为十进制：按权展开
+</h5><h5 id="十进制整数转换为k进制除基取余">十进制整数转换为k进制：除基取余
+</h5><h5 id="十进制小数转换为k进制乘基取整">十进制小数转换为k进制：乘基取整
+</h5><h4 id="面向字节的内存组织管理">面向字节的内存组织管理
+</h4><p>系统用地址来引用内存中的数据</p>
+<h4 id="机器字">机器字
+</h4><p>任何机器都有一个字长，是整型值数据的名义长度和地址的名义长度</p>
+<h4 id="面向字的内存组织管理">面向字的内存组织管理
+</h4><p>地址：字中第一个字节的地址，相邻字的地址相差4（32位）或8（64位）
+C语言类型的典型大小如下（单位字节）</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th style="text-align: center">C数据类型</th>
+          <th style="text-align: center">32bit</th>
+          <th style="text-align: center">64bit</th>
+          <th style="text-align: center">x86-64</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">char</td>
+          <td style="text-align: center">1</td>
+          <td style="text-align: center">1</td>
+          <td style="text-align: center">1</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">short</td>
+          <td style="text-align: center">2</td>
+          <td style="text-align: center">2</td>
+          <td style="text-align: center">2</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">int</td>
+          <td style="text-align: center">4</td>
+          <td style="text-align: center">4</td>
+          <td style="text-align: center">4</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">long</td>
+          <td style="text-align: center">4</td>
+          <td style="text-align: center">8</td>
+          <td style="text-align: center">8</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">float</td>
+          <td style="text-align: center">4</td>
+          <td style="text-align: center">4</td>
+          <td style="text-align: center">4</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">double</td>
+          <td style="text-align: center">8</td>
+          <td style="text-align: center">8</td>
+          <td style="text-align: center">8</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">long double</td>
+          <td style="text-align: center">-</td>
+          <td style="text-align: center">-</td>
+          <td style="text-align: center">10/16</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">pointer</td>
+          <td style="text-align: center">4</td>
+          <td style="text-align: center">8</td>
+          <td style="text-align: center">8</td>
+      </tr>
+  </tbody>
+</table></div>
+<h4 id="字节序">字节序
+</h4><p>有多个字节的字，其各个字节在内存中的排列在不同的机器上可能不同
+大端序：LSB的字节的地址最高
+小端序：MSB的字节的地址最高
+很多新的处理器支持双端序</p>
 
 </section>
 

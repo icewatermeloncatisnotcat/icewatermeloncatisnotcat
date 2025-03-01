@@ -7,7 +7,15 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>icewatermeloncatisnotcat</copyright>
-        <lastBuildDate>Wed, 26 Feb 2025 12:54:34 +0800</lastBuildDate><atom:link href="https://icewatermeloncatisnotcat.github.io/icewatermeloncatisnotcat/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 27 Feb 2025 15:47:32 +0800</lastBuildDate><atom:link href="https://icewatermeloncatisnotcat.github.io/icewatermeloncatisnotcat/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>写作与沟通</title>
+        <link>https://icewatermeloncatisnotcat.github.io/icewatermeloncatisnotcat/p/%E5%86%99%E4%BD%9C%E4%B8%8E%E6%B2%9F%E9%80%9A/</link>
+        <pubDate>Thu, 27 Feb 2025 15:47:32 +0800</pubDate>
+        
+        <guid>https://icewatermeloncatisnotcat.github.io/icewatermeloncatisnotcat/p/%E5%86%99%E4%BD%9C%E4%B8%8E%E6%B2%9F%E9%80%9A/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>计算机系统</title>
         <link>https://icewatermeloncatisnotcat.github.io/icewatermeloncatisnotcat/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F/</link>
         <pubDate>Wed, 26 Feb 2025 12:54:34 +0800</pubDate>
@@ -59,6 +67,102 @@
 	
 	
 &gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;第二节课&#34;&gt;第二节课
+&lt;/h2&gt;&lt;h3 id=&#34;信息的位表示&#34;&gt;信息的位表示
+&lt;/h3&gt;&lt;h4 id=&#34;位字节&#34;&gt;位，字节
+&lt;/h4&gt;&lt;h5 id=&#34;位比特&#34;&gt;位（比特）
+&lt;/h5&gt;&lt;p&gt;最底层的二进制数字，值为0或1&lt;/p&gt;
+&lt;h5 id=&#34;位组合&#34;&gt;位组合
+&lt;/h5&gt;&lt;p&gt;把位组合到一起，用某种规则解读&lt;/p&gt;
+&lt;h5 id=&#34;字节&#34;&gt;字节
+&lt;/h5&gt;&lt;p&gt;8bit块，byte&lt;/p&gt;
+&lt;h4 id=&#34;进制表示&#34;&gt;进制表示
+&lt;/h4&gt;&lt;h5 id=&#34;数的通用表示&#34;&gt;数的通用表示
+&lt;/h5&gt;&lt;p&gt;十进制：$3721=3\times 10^3+7\times 10^1+2\times 10^1+1\times 10^0$
+二进制：$a_na_{n-1} \dots a_1a_0.b_1b_2\dots b_m=a_n\times 2^n+\dots + a_0\times 2^0+b_1\times 2^{-1}+\dots+b_m\times 2^{-m}$&lt;/p&gt;
+&lt;h5 id=&#34;二进制数&#34;&gt;二进制数
+&lt;/h5&gt;&lt;p&gt;最高有效位：MSB
+最低有效位：LSB
+二进制数数字串长不易阅读&lt;/p&gt;
+&lt;h5 id=&#34;十六进制数&#34;&gt;十六进制数
+&lt;/h5&gt;&lt;p&gt;0，1，2，3，4，5，6，7，8，9，A，B，C，D，E，F
+二进制数和十六进制数有对应关系，每四个二进制位对应一个十六进制位&lt;/p&gt;
+&lt;h4 id=&#34;进制转换&#34;&gt;进制转换
+&lt;/h4&gt;&lt;h5 id=&#34;k进制转换为十进制按权展开&#34;&gt;k进制转换为十进制：按权展开
+&lt;/h5&gt;&lt;h5 id=&#34;十进制整数转换为k进制除基取余&#34;&gt;十进制整数转换为k进制：除基取余
+&lt;/h5&gt;&lt;h5 id=&#34;十进制小数转换为k进制乘基取整&#34;&gt;十进制小数转换为k进制：乘基取整
+&lt;/h5&gt;&lt;h4 id=&#34;面向字节的内存组织管理&#34;&gt;面向字节的内存组织管理
+&lt;/h4&gt;&lt;p&gt;系统用地址来引用内存中的数据&lt;/p&gt;
+&lt;h4 id=&#34;机器字&#34;&gt;机器字
+&lt;/h4&gt;&lt;p&gt;任何机器都有一个字长，是整型值数据的名义长度和地址的名义长度&lt;/p&gt;
+&lt;h4 id=&#34;面向字的内存组织管理&#34;&gt;面向字的内存组织管理
+&lt;/h4&gt;&lt;p&gt;地址：字中第一个字节的地址，相邻字的地址相差4（32位）或8（64位）
+C语言类型的典型大小如下（单位字节）&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;C数据类型&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;32bit&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;64bit&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;x86-64&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;char&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;1&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;1&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;1&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;short&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;2&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;2&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;2&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;int&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;4&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;4&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;4&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;long&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;4&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;8&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;8&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;float&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;4&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;4&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;4&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;double&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;8&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;8&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;8&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;long double&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;-&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;-&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;10/16&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;pointer&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;4&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;8&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;8&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;字节序&#34;&gt;字节序
+&lt;/h4&gt;&lt;p&gt;有多个字节的字，其各个字节在内存中的排列在不同的机器上可能不同
+大端序：LSB的字节的地址最高
+小端序：MSB的字节的地址最高
+很多新的处理器支持双端序&lt;/p&gt;
 </description>
         </item>
         <item>
